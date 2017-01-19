@@ -9,7 +9,7 @@ services:
   - docker
 
 before_install:  
-  - export APP_VERSION=`git describe --tag --long`
+  - export APP_VERSION=`git describe --tag --long | awk -F- '{print $1"."$2}'`
   
 script: 
   - go test .
