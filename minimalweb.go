@@ -1,9 +1,7 @@
 package main
 
 import (
-    "os"
     "net/http"
-    "strings"
 )
 
 // This is injected at build time
