@@ -1,2 +1,2 @@
 # minimalwebgo
-Minimal web app in Go.
+Minimal web app in Go
