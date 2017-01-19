@@ -1,7 +1,8 @@
 package main
 
 import (
-    "net/http"
+	"fmt"
+  "net/http"
 )
 
 // This is injected at build time
