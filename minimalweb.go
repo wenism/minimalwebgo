@@ -13,7 +13,7 @@ func handleIndex(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleVersion(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "%s", AppVersion)
+	fmt.Fprintf(w, "%s\n", AppVersion)
 }
 
 func main() {
