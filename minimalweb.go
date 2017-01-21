@@ -17,13 +17,11 @@ func handleVersion(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleLiveness(w http.ResponseWriter, r *http.Request) {
-  // running?
-	fmt.Fprintf(w, "<p>ok</p>\n")
+  w.Write([]byte("Alive!\n"))
 }
 
 func handleReadiness(w http.ResponseWriter, r *http.Request) {
-	// ready to serve?
-  fmt.Fprintf(w, "OK\n")
+  w.Write([]byte("Ready!\n"))
 }
 
 func main() {
