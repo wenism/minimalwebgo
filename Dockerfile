@@ -1,4 +1,4 @@
 FROM scratch
 ADD minimalweb /
-EXPOSE 80
+EXPOSE 2888
 CMD ["/minimalweb"]

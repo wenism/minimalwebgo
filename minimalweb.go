@@ -29,5 +29,5 @@ func main() {
   http.HandleFunc("/version", handleVersion)
   http.HandleFunc("/liveness", handleLiveness)
   http.HandleFunc("/readiness", handleReadiness)
-	http.ListenAndServe(":80", nil)
+	http.ListenAndServe(":2888", nil)
 }
